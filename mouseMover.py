@@ -1,7 +1,16 @@
 import pyautogui
+import time
 
-while True:
+userTime = int(input('How many hour(s) will the prog run?: '))
+print('mouseMover prog will run for', userTime, 'hour(s)')
+startTime = time.time() # remember when we started
+
+while (time.time() - startTime) < (userTime * 60) * 60:
     pyautogui.moveRel(0, 10)
-    pyautogui.PAUSE = 1
+    pyautogui.click()
+    pyautogui.PAUSE = 60
     pyautogui.moveRel(0, -10)
-    pyautogui.PAUSE = 1
+    pyautogui.click()
+    pyautogui.PAUSE = 60
+
+print('mouseMover prog has finished running for', userTime, 'hour(s)')
