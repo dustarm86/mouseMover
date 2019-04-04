@@ -1,3 +1,11 @@
+"""
+dependencies:
+pip3 install pyobj c -core
+
+pip3 install pyobjc
+
+pip3 install pyautogui
+"""
 import pyautogui
 import time
 
