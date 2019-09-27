@@ -1,2 +1,2 @@
 # mouseMover
-move os x mouse down 10 pixels then up 10 pixels
+move macOS mouse up 10 units then down 10 units for x amount of specified time.
