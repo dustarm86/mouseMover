@@ -14,11 +14,11 @@ print('mouseMover prog will run for', userTime, 'hour(s)')
 startTime = time.time() # remember when we started
 
 while (time.time() - startTime) < (userTime * 60) * 60:
-    pyautogui.PAUSE = 10
-    pyautogui.moveRel(0, 10)
+    pyautogui.PAUSE = 8
+    pyautogui.moveRel(0, -25)
     pyautogui.click()
     pyautogui.PAUSE = 15
-    pyautogui.moveRel(0, -10)
+    pyautogui.moveRel(0, 25)
     pyautogui.click()
     pyautogui.PAUSE = 15
 
